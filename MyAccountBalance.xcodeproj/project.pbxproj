@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0044DF029A5DF8D002445AB /* DBMessage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0044DEE29A5DF8D002445AB /* DBMessage+CoreDataClass.swift */; };
+		C0044DF129A5DF8D002445AB /* DBMessage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0044DEF29A5DF8D002445AB /* DBMessage+CoreDataProperties.swift */; };
 		C0DD82B929A5242C000117B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD82B829A5242C000117B3 /* AppDelegate.swift */; };
 		C0DD82C229A5242D000117B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0DD82C129A5242D000117B3 /* Assets.xcassets */; };
 		C0DD82C529A5242D000117B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0DD82C329A5242D000117B3 /* LaunchScreen.storyboard */; };
@@ -19,13 +21,7 @@
 		C0DD831E29A52580000117B3 /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0DD82E229A52580000117B3 /* AccountViewController.xib */; };
 		C0DD831F29A52580000117B3 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD82E329A52580000117B3 /* AccountViewController.swift */; };
 		C0DD832029A52580000117B3 /* TabBarDependencyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD82E629A52580000117B3 /* TabBarDependencyWrapper.swift */; };
-		C0DD832129A52580000117B3 /* TabRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD82E929A52580000117B3 /* TabRepository.swift */; };
-		C0DD832229A52580000117B3 /* TabDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD82EB29A52580000117B3 /* TabDataProvider.swift */; };
-		C0DD832329A52580000117B3 /* TabModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD82EE29A52580000117B3 /* TabModels.swift */; };
-		C0DD832429A52580000117B3 /* TabUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD82F029A52580000117B3 /* TabUseCases.swift */; };
-		C0DD832529A52580000117B3 /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD82F329A52580000117B3 /* TabViewModel.swift */; };
 		C0DD832629A52580000117B3 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD82F529A52580000117B3 /* TabBarCoordinator.swift */; };
-		C0DD832729A52580000117B3 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD82F729A52580000117B3 /* TabViewController.swift */; };
 		C0DD832829A52580000117B3 /* LocationDependencyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD82FA29A52580000117B3 /* LocationDependencyWrapper.swift */; };
 		C0DD832929A52580000117B3 /* LocationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD82FF29A52580000117B3 /* LocationCoordinator.swift */; };
 		C0DD832A29A52580000117B3 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD830129A52580000117B3 /* LocationViewController.swift */; };
@@ -45,9 +41,22 @@
 		C0DD834029A52768000117B3 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD833F29A52768000117B3 /* BaseCoordinator.swift */; };
 		C0DD834229A5277F000117B3 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD834129A5277F000117B3 /* Observable.swift */; };
 		C0DD834529A527A1000117B3 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD834429A527A1000117B3 /* UIColor+.swift */; };
+		C0DD835229A5A5EF000117B3 /* NotificationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD835129A5A5EF000117B3 /* NotificationListViewController.swift */; };
+		C0DD835429A5A627000117B3 /* NotificationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD835329A5A627000117B3 /* NotificationListViewModel.swift */; };
+		C0DD835629A5A712000117B3 /* NotificationListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0DD835529A5A712000117B3 /* NotificationListViewController.xib */; };
+		C0DD835829A5B2C1000117B3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD835729A5B2C1000117B3 /* NetworkManager.swift */; };
+		C0DD835A29A5B30A000117B3 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD835929A5B30A000117B3 /* NetworkClient.swift */; };
+		C0DD835C29A5B35B000117B3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD835B29A5B35B000117B3 /* NetworkError.swift */; };
+		C0DD835E29A5B398000117B3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD835D29A5B398000117B3 /* CoreDataStack.swift */; };
+		C0DD836129A5B3D8000117B3 /* MyAccountBalance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0DD835F29A5B3D8000117B3 /* MyAccountBalance.xcdatamodeld */; };
+		C0DD836329A5B480000117B3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD836229A5B480000117B3 /* Service.swift */; };
+		C0DD836629A5B580000117B3 /* NotificationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD836429A5B580000117B3 /* NotificationViewCell.swift */; };
+		C0DD836729A5B580000117B3 /* NotificationViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0DD836529A5B580000117B3 /* NotificationViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0044DEE29A5DF8D002445AB /* DBMessage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBMessage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C0044DEF29A5DF8D002445AB /* DBMessage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBMessage+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C0DD82B529A5242C000117B3 /* MyAccountBalance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAccountBalance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0DD82B829A5242C000117B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0DD82C129A5242D000117B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,13 +71,7 @@
 		C0DD82E229A52580000117B3 /* AccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
 		C0DD82E329A52580000117B3 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		C0DD82E629A52580000117B3 /* TabBarDependencyWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarDependencyWrapper.swift; sourceTree = "<group>"; };
-		C0DD82E929A52580000117B3 /* TabRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabRepository.swift; sourceTree = "<group>"; };
-		C0DD82EB29A52580000117B3 /* TabDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabDataProvider.swift; sourceTree = "<group>"; };
-		C0DD82EE29A52580000117B3 /* TabModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabModels.swift; sourceTree = "<group>"; };
-		C0DD82F029A52580000117B3 /* TabUseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabUseCases.swift; sourceTree = "<group>"; };
-		C0DD82F329A52580000117B3 /* TabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
 		C0DD82F529A52580000117B3 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
-		C0DD82F729A52580000117B3 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		C0DD82FA29A52580000117B3 /* LocationDependencyWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDependencyWrapper.swift; sourceTree = "<group>"; };
 		C0DD82FF29A52580000117B3 /* LocationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCoordinator.swift; sourceTree = "<group>"; };
 		C0DD830129A52580000117B3 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +91,17 @@
 		C0DD833F29A52768000117B3 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		C0DD834129A5277F000117B3 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		C0DD834429A527A1000117B3 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		C0DD835129A5A5EF000117B3 /* NotificationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListViewController.swift; sourceTree = "<group>"; };
+		C0DD835329A5A627000117B3 /* NotificationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListViewModel.swift; sourceTree = "<group>"; };
+		C0DD835529A5A712000117B3 /* NotificationListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationListViewController.xib; sourceTree = "<group>"; };
+		C0DD835729A5B2C1000117B3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C0DD835929A5B30A000117B3 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		C0DD835B29A5B35B000117B3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C0DD835D29A5B398000117B3 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		C0DD836029A5B3D8000117B3 /* MyAccountBalance.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyAccountBalance.xcdatamodel; sourceTree = "<group>"; };
+		C0DD836229A5B480000117B3 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		C0DD836429A5B580000117B3 /* NotificationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewCell.swift; sourceTree = "<group>"; };
+		C0DD836529A5B580000117B3 /* NotificationViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,8 +242,6 @@
 			isa = PBXGroup;
 			children = (
 				C0DD82E529A52580000117B3 /* DIContainer */,
-				C0DD82E729A52580000117B3 /* Data */,
-				C0DD82EC29A52580000117B3 /* Domain */,
 				C0DD82F129A52580000117B3 /* Presentation */,
 			);
 			path = Tab;
@@ -243,72 +255,12 @@
 			path = DIContainer;
 			sourceTree = "<group>";
 		};
-		C0DD82E729A52580000117B3 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				C0DD82E829A52580000117B3 /* Repository */,
-				C0DD82EA29A52580000117B3 /* Provider */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		C0DD82E829A52580000117B3 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				C0DD82E929A52580000117B3 /* TabRepository.swift */,
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
-		C0DD82EA29A52580000117B3 /* Provider */ = {
-			isa = PBXGroup;
-			children = (
-				C0DD82EB29A52580000117B3 /* TabDataProvider.swift */,
-			);
-			path = Provider;
-			sourceTree = "<group>";
-		};
-		C0DD82EC29A52580000117B3 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				C0DD82ED29A52580000117B3 /* Model */,
-				C0DD82EF29A52580000117B3 /* UseCase */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		C0DD82ED29A52580000117B3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C0DD82EE29A52580000117B3 /* TabModels.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C0DD82EF29A52580000117B3 /* UseCase */ = {
-			isa = PBXGroup;
-			children = (
-				C0DD82F029A52580000117B3 /* TabUseCases.swift */,
-			);
-			path = UseCase;
-			sourceTree = "<group>";
-		};
 		C0DD82F129A52580000117B3 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				C0DD82F429A52580000117B3 /* Coordinator */,
-				C0DD82F229A52580000117B3 /* ViewModel */,
-				C0DD82F629A52580000117B3 /* View */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		C0DD82F229A52580000117B3 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				C0DD82F329A52580000117B3 /* TabViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C0DD82F429A52580000117B3 /* Coordinator */ = {
@@ -317,14 +269,6 @@
 				C0DD82F529A52580000117B3 /* TabBarCoordinator.swift */,
 			);
 			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		C0DD82F629A52580000117B3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C0DD82F729A52580000117B3 /* TabViewController.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		C0DD82F829A52580000117B3 /* Location */ = {
@@ -453,6 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				C0DD831229A52580000117B3 /* HomeViewModel.swift */,
+				C0DD835329A5A627000117B3 /* NotificationListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -470,6 +415,10 @@
 			children = (
 				C0DD831729A52580000117B3 /* HomeViewController.swift */,
 				C0DD831629A52580000117B3 /* HomeViewController.xib */,
+				C0DD835129A5A5EF000117B3 /* NotificationListViewController.swift */,
+				C0DD835529A5A712000117B3 /* NotificationListViewController.xib */,
+				C0DD836429A5B580000117B3 /* NotificationViewCell.swift */,
+				C0DD836529A5B580000117B3 /* NotificationViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -528,6 +477,10 @@
 		C0DD834729A528EA000117B3 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				C0DD835D29A5B398000117B3 /* CoreDataStack.swift */,
+				C0044DEF29A5DF8D002445AB /* DBMessage+CoreDataProperties.swift */,
+				C0044DEE29A5DF8D002445AB /* DBMessage+CoreDataClass.swift */,
+				C0DD835F29A5B3D8000117B3 /* MyAccountBalance.xcdatamodeld */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -535,6 +488,10 @@
 		C0DD834829A528F6000117B3 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				C0DD835729A5B2C1000117B3 /* NetworkManager.swift */,
+				C0DD835929A5B30A000117B3 /* NetworkClient.swift */,
+				C0DD835B29A5B35B000117B3 /* NetworkError.swift */,
+				C0DD836229A5B480000117B3 /* Service.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -598,7 +555,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0DD82C529A5242D000117B3 /* LaunchScreen.storyboard in Resources */,
+				C0DD835629A5A712000117B3 /* NotificationListViewController.xib in Resources */,
 				C0DD82C229A5242D000117B3 /* Assets.xcassets in Resources */,
+				C0DD836729A5B580000117B3 /* NotificationViewCell.xib in Resources */,
 				C0DD831E29A52580000117B3 /* AccountViewController.xib in Resources */,
 				C0DD832B29A52580000117B3 /* LocationViewController.xib in Resources */,
 				C0DD831B29A52580000117B3 /* ServiceViewController.xib in Resources */,
@@ -617,19 +576,24 @@
 				C0DD832D29A52580000117B3 /* HomeRepository.swift in Sources */,
 				C0DD831829A52580000117B3 /* ServiceDependencyWrapper.swift in Sources */,
 				C0DD833029A52580000117B3 /* HomeUseCases.swift in Sources */,
-				C0DD832329A52580000117B3 /* TabModels.swift in Sources */,
-				C0DD832529A52580000117B3 /* TabViewModel.swift in Sources */,
 				C0DD832829A52580000117B3 /* LocationDependencyWrapper.swift in Sources */,
-				C0DD832729A52580000117B3 /* TabViewController.swift in Sources */,
+				C0DD835C29A5B35B000117B3 /* NetworkError.swift in Sources */,
 				C0DD833229A52580000117B3 /* HomeCoordinator.swift in Sources */,
+				C0DD835E29A5B398000117B3 /* CoreDataStack.swift in Sources */,
 				C0DD82B929A5242C000117B3 /* AppDelegate.swift in Sources */,
-				C0DD832429A52580000117B3 /* TabUseCases.swift in Sources */,
-				C0DD832229A52580000117B3 /* TabDataProvider.swift in Sources */,
 				C0DD833429A52580000117B3 /* HomeViewController.swift in Sources */,
+				C0044DF129A5DF8D002445AB /* DBMessage+CoreDataProperties.swift in Sources */,
 				C0DD833E29A52755000117B3 /* BaseDependencyWrapper.swift in Sources */,
+				C0DD836329A5B480000117B3 /* Service.swift in Sources */,
+				C0DD835229A5A5EF000117B3 /* NotificationListViewController.swift in Sources */,
 				C0DD831F29A52580000117B3 /* AccountViewController.swift in Sources */,
+				C0DD835A29A5B30A000117B3 /* NetworkClient.swift in Sources */,
 				C0DD832F29A52580000117B3 /* HomeModels.swift in Sources */,
 				C0DD831D29A52580000117B3 /* AccountCoordinator.swift in Sources */,
+				C0DD835429A5A627000117B3 /* NotificationListViewModel.swift in Sources */,
+				C0DD835829A5B2C1000117B3 /* NetworkManager.swift in Sources */,
+				C0044DF029A5DF8D002445AB /* DBMessage+CoreDataClass.swift in Sources */,
+				C0DD836129A5B3D8000117B3 /* MyAccountBalance.xcdatamodeld in Sources */,
 				C0DD834529A527A1000117B3 /* UIColor+.swift in Sources */,
 				C0DD832C29A52580000117B3 /* HomeDependencyWrapper.swift in Sources */,
 				C0DD832029A52580000117B3 /* TabBarDependencyWrapper.swift in Sources */,
@@ -637,10 +601,10 @@
 				C0DD832629A52580000117B3 /* TabBarCoordinator.swift in Sources */,
 				C0DD833A29A52721000117B3 /* XError.swift in Sources */,
 				C0DD831C29A52580000117B3 /* AccountDependencyWrapper.swift in Sources */,
-				C0DD832129A52580000117B3 /* TabRepository.swift in Sources */,
 				C0DD833129A52580000117B3 /* HomeViewModel.swift in Sources */,
 				C0DD834029A52768000117B3 /* BaseCoordinator.swift in Sources */,
 				C0DD832A29A52580000117B3 /* LocationViewController.swift in Sources */,
+				C0DD836629A5B580000117B3 /* NotificationViewCell.swift in Sources */,
 				C0DD834229A5277F000117B3 /* Observable.swift in Sources */,
 				C0DD832929A52580000117B3 /* LocationCoordinator.swift in Sources */,
 				C0DD831929A52580000117B3 /* ServiceCoordinator.swift in Sources */,
@@ -852,6 +816,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C0DD835F29A5B3D8000117B3 /* MyAccountBalance.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C0DD836029A5B3D8000117B3 /* MyAccountBalance.xcdatamodel */,
+			);
+			currentVersion = C0DD836029A5B3D8000117B3 /* MyAccountBalance.xcdatamodel */;
+			path = MyAccountBalance.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C0DD82AD29A5242C000117B3 /* Project object */;
 }

@@ -45,4 +45,19 @@ class HomeDependencyWrapper: BaseDependencyWrapper {
             return UINavigationController(rootViewController: viewController)
         }, scope: .current)
     }
+    
+    func registerNotificationListDependencies() {
+        
+        // ViewModel
+        container.register(type: NotificationListViewModelProtocol.self, callback: { (resolver, navigations: NotificationListViewModelNavigation) in
+            let useCases = try resolver.resolve(type: HomeUseCasesProtocol.self, scope: .current)
+            return NotificationListViewModel(useCases: useCases, navigations: navigations)
+        }, scope: .current)
+        
+        // ViewController
+        container.register(type: NotificationListViewController.self, callback: { (resolver, navigations: NotificationListViewModelNavigation) in
+            let viewModel = try resolver.resolve(type: NotificationListViewModelProtocol.self, argument: navigations, scope: .current)
+            return NotificationListViewController(viewModel: viewModel)
+        }, scope: .current)
+    }
 }

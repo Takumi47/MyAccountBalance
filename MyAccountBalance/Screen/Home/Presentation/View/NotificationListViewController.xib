@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="MyAccountBalance" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationListViewController" customModule="MyAccountBalance" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="0Ew-cG-Sa7" id="Jq8-XT-zdH"/>
-                <outlet property="view" destination="iN0-l3-epB" id="xxl-23-jHP"/>
+                <outlet property="tableView" destination="hA2-YM-dZK" id="xwH-oP-kmy"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Cta-lt-4kO"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -19,24 +19,24 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0Ew-cG-Sa7">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hA2-YM-dZK">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="5ao-Fh-zad"/>
-                        <outlet property="delegate" destination="-1" id="97N-OL-WcN"/>
+                        <outlet property="dataSource" destination="-1" id="UUO-1S-2g7"/>
+                        <outlet property="delegate" destination="-1" id="fIH-8g-gBH"/>
                     </connections>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0Ew-cG-Sa7" secondAttribute="trailing" id="Ts9-49-nB4"/>
-                <constraint firstItem="0Ew-cG-Sa7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UqO-ci-bzt"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0Ew-cG-Sa7" secondAttribute="bottom" id="ke0-Ih-aE4"/>
-                <constraint firstItem="0Ew-cG-Sa7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="oAX-NO-QRK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hA2-YM-dZK" secondAttribute="trailing" id="Bpg-3u-SZ9"/>
+                <constraint firstItem="hA2-YM-dZK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tOs-Pp-Y25"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hA2-YM-dZK" secondAttribute="bottom" id="uez-BT-Sw7"/>
+                <constraint firstItem="hA2-YM-dZK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="waV-3h-Kcd"/>
             </constraints>
-            <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
+            <point key="canvasLocation" x="140" y="21"/>
         </view>
     </objects>
     <resources>

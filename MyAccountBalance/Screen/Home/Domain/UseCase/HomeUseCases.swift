@@ -6,13 +6,14 @@
 //
 
 protocol HomeUseCasesProtocol {
+    func executeFetchLocalNotificationList(callback: @escaping ([DBMessage]) -> Void)
+    func executeFetchEmptyNotificationList(completion: @escaping (Result<None, NetworkError>) -> Void)
+    func executeFetchNotificationList(completion: @escaping (Result<None, NetworkError>) -> Void)
 }
 
 final class HomeUseCases {
 
-    // MARK: - Public variables
-
-    // MARK: - Private variables
+    // MARK: - Properties
     
      private let repository: HomeRepositoryProtocol
 
@@ -24,4 +25,15 @@ final class HomeUseCases {
 }
 
 extension HomeUseCases: HomeUseCasesProtocol {
+    func executeFetchLocalNotificationList(callback: @escaping ([DBMessage]) -> Void) {
+        repository.fetchLocalNotificationList(callback: callback)
+    }
+    
+    func executeFetchEmptyNotificationList(completion: @escaping (Result<None, NetworkError>) -> Void) {
+        repository.fetchEmptyNotificationList(completion: completion)
+    }
+    
+    func executeFetchNotificationList(completion: @escaping (Result<None, NetworkError>) -> Void) {
+        repository.fetchNotificationList(completion: completion)
+    }
 }
